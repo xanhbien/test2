@@ -1,38 +1,52 @@
-.App {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#root {
+  width: 800px;
+  margin: 0 auto;
+  background-color: rgb(238, 235, 235);
+  padding: 10px;
+  margin: 10px;
+}
+.container {
+  font-family: "Times New Roman", Times, serif;
+}
+.container header a:link {
+  color: blueviolet;
+  padding: 20px;
+  text-decoration: none;
+  margin-bottom: 20px;
   text-align: center;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.is-active {
+  color: red;
+  font-weight: bold;
+}
+.filter {
+  margin: 20px;
+}
+.filter input {
+  border: 1px solid green;
+  margin-right: 10px;
+}
+.filter select {
+  border: 1px solid red;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.list {
+  margin: 20px;
+  padding: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.list a:link {
+  margin-left: 10px;
+  text-decoration: none;
+  color: blue;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list button {
+  margin-left: 10px;
+  border: 1px solid red;
 }
